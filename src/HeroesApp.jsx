@@ -1,11 +1,11 @@
 import './styles.css';
 
-import { useState } from 'react'
+import { AppRouter } from "./router/AppRouter";
 
 function HeroesApp() {
   return (
     <>
-      <h1>HeroesApp</h1>
+      <AppRouter />
     </>
   )
 }
