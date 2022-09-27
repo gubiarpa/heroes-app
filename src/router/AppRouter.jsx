@@ -1,4 +1,4 @@
-import { HeroesRoutes } from "../heroes/routes/HeroesRoutes";
+import { HeroesRoutes } from "../heroes";
 import { LoginPage } from "../auth/pages";
 import { Route, Routes } from "react-router-dom";
 
