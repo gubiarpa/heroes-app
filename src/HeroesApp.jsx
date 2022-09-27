@@ -1,13 +1,13 @@
-import './styles.css';
+import "./styles.css";
 
 import { AppRouter } from "./router/AppRouter";
 
 function HeroesApp() {
-  return (
-    <>
-      <AppRouter />
-    </>
-  )
+	return (
+		<>
+			<AppRouter />
+		</>
+	);
 }
 
 export default HeroesApp;

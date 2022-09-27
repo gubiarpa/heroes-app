@@ -5,10 +5,10 @@ import HeroesApp from "./HeroesApp";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <HeroesApp />
-    </BrowserRouter>
-  </React.StrictMode>
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+	<React.StrictMode>
+		<BrowserRouter>
+			<HeroesApp />
+		</BrowserRouter>
+	</React.StrictMode>
+);

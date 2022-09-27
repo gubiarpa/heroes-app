@@ -1,5 +1,3 @@
 export const DcPage = () => {
-    return (
-        <div>DcPage</div>
-    )
-}
+  return <div>DcPage</div>;
+};
