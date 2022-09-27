@@ -4,6 +4,13 @@ export const Navbar = () => {
 	const navLinkClassName = (isActive = false) =>
 		`nav-item nav-link ${isActive ? "active text-success" : ""}`;
 
+	const pages = [
+		{ label: "Marvel", url: "marvel" },
+		{ label: "DC", url: "dc" },
+		{ label: "Hero", url: "hero" },
+		{ label: "Search", url: "search" },
+	];
+
 	return (
 		<nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
 			<Link className="navbar-brand" to="/">
@@ -12,19 +19,15 @@ export const Navbar = () => {
 
 			<div className="navbar-collapse">
 				<div className="navbar-nav">
-					<NavLink
-						className={({ isActive }) => navLinkClassName(isActive)}
-						to="/marvel"
-					>
-						Marvel
-					</NavLink>
-
-					<NavLink
-						className={({ isActive }) => navLinkClassName(isActive)}
-						to="/dc"
-					>
-						DC
-					</NavLink>
+					{pages.map(({ label, url }) => (
+						<NavLink
+							key={url}
+							to={url}
+							className={({ isActive }) => navLinkClassName(isActive)}
+						>
+							{label}
+						</NavLink>
+					))}
 				</div>
 			</div>
 
